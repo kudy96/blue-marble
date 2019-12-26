@@ -1,0 +1,202 @@
+[
+ {
+   "LandNo": "1",
+   "LandName": "출발",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "2",
+   "LandName": "타이페이",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "3",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "4",
+   "LandName": "베이징",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "5",
+   "LandName": "마닐라",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "6",
+   "LandName": "제주",
+   "LandTypeNo": "2"
+ },
+ {
+   "LandNo": "7",
+   "LandName": "싱가포르",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "8",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "9",
+   "LandName": "카이로",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "10",
+   "LandName": "이스탄불",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "11",
+   "LandName": "무인도",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "12",
+   "LandName": "아테네",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "13",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "14",
+   "LandName": "코펜하겐",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "15",
+   "LandName": "스톡홀롬",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "16",
+   "LandName": "콩코드여객기",
+   "LandTypeNo": "2"
+ },
+ {
+   "LandNo": "17",
+   "LandName": "베른",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "18",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "19",
+   "LandName": "베를린",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "20",
+   "LandName": "오타와",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "21",
+   "LandName": "사회복지기금 회수",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "22",
+   "LandName": "부에노스아이레스",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "23",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "24",
+   "LandName": "상파울로",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "25",
+   "LandName": "시드니",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "26",
+   "LandName": "부산",
+   "LandTypeNo": "2"
+ },
+ {
+   "LandNo": "27",
+   "LandName": "하와이",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "28",
+   "LandName": "리스본",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "29",
+   "LandName": "퀸 엘리자베스호",
+   "LandTypeNo": "2"
+ },
+ {
+   "LandNo": "30",
+   "LandName": "마드리드",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "31",
+   "LandName": "우주여행",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "32",
+   "LandName": "도쿄",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "33",
+   "LandName": "컬럼비아호",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "34",
+   "LandName": "파리",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "35",
+   "LandName": "로마",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "36",
+   "LandName": "황금열쇠",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "37",
+   "LandName": "런던",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "38",
+   "LandName": "뉴욕",
+   "LandTypeNo": "1"
+ },
+ {
+   "LandNo": "39",
+   "LandName": "사회복지기금 기부",
+   "LandTypeNo": "3"
+ },
+ {
+   "LandNo": "40",
+   "LandName": "서울",
+   "LandTypeNo": "2"
+ }
+]

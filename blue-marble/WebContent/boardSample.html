@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<style>
+	/* table{
+		  background-image: url("./css/boardimage.png");
+	} */
+
+	td{
+		width: 130px;
+	}
+	.dice{
+		height:60px;
+		width:60px;
+	}
+	
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="row">
+<h3>BBlue-Marble</h3>
+	<div class="controll col-sm-3">	
+		<div>
+			<button id="diceBtn" type="button">주사위 굴리기</button>		
+			<!-- <button id="doubleBtn" type="button">더블 테스트</button> -->
+		</div>
+		
+		<div>
+			결과<input type="text" id="point">
+			플레이어<input type="text" id="nowPlay">
+		</div>
+		<input type="image" class="dice" readonly="readonly" id="dice1" src="/blue-marble/image/dice1.PNG">
+		<input type="image" class="dice" readonly="readonly" id="dice2" src="/blue-marble/image/dice1.PNG">
+	</div>
+	
+	<table class="table" id="table" style="text-align: center; font-weight: bold;">
+		<tr height="100px">
+			<td class="td_tb no_border" id="p21">
+				사회복지기금당첨<span id="p21"></span>
+			</td>
+			<td class="td_tb no_border">
+				부에노스아이레스<span id="p22"></span>
+			</td>
+			<td class="td_tb no_border">
+				황금열쇠<span id="p23"></span>
+			</td>
+			<td class="td_tb no_border">
+				상파울로<span id="p24"></span>
+			</td>
+			<td class="td_tb no_border">
+				시드니<span id="p25"></span>
+			</td>
+			<td class="td_tb no_border">
+				부산<span id="p26"></span>
+			</td>
+			<td class="td_tb no_border">
+				하와이<span id="p27"></span>
+			</td>
+			<td class="td_tb no_border">
+				리스본<span id="p28"></span>
+			</td>
+			<td class="td_tb no_border">
+				퀸 엘리자베스호<span id="p29"></span>
+			</td>
+			<td class="td_tb no_border">
+				마드리드<span id="p30"></span>
+			</td>
+			<td class="td_tb no_border">
+				우주여행<span id="p31"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				오타와<span id="p20"></span>
+			</td>
+			<td class="no_border no_hover" colspan="9" rowspan="9">
+				<!-- 빈칸 행 열 합치기 & 클릭 비활성화   -->
+			</td>
+			<td class="td_rl no_border">
+				도쿄<span id="p32"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				베를린<span id="p19"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				컬럼비아호<span id="p33"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				황금열쇠<span id="p18"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				파리<span id="p34"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				베른<span id="p17"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				로마<span id="p35"></span>
+			</td>
+		</tr>
+		<tr height="80px">
+			<td class="td_rl no_border">
+				콩코드여객기<span id="p16"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				황금열쇠<span id="p36"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				스톡홀롬<span id="p15"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				런던<span id="p37"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				코펜하겐<span id="p14"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				뉴욕<span id="p38"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				황금열쇠<span id="p13"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				사회복지기부<span id="p39"></span>
+			</td>
+		</tr>
+		
+		<tr height="80px">
+			<td class="td_rl no_border">
+				아테네<span id="p12"></span>
+			</td>
+			
+			<td class="td_rl no_border">
+				서울<span id="p40"></span>
+			</td>
+		</tr>
+	
+		<tr height="100px">
+			<td width="14%" class="td_tb no_border">
+				무인도<span id="p11"></span>
+			</td>
+			<td width="7.7%" class="td_tb no_border">
+				이스탄불<span id="p10"></span>
+			</td>
+			<td width="7.9%" class="td_tb no_border">
+				카이로<span id="p9"></span>
+			</td>
+			<td width="7.7%" class="td_tb no_border">
+				황금열쇠<span id="p8"></span>
+			</td>
+			<td width="7.5%" class="td_tb no_border">
+				싱가포르<span id="p7"></span>
+			</td>
+			<td width="8%" class="td_tb no_border">
+				제주<span id="p6"></span>
+			</td>
+			<td width="7.5%" class="td_tb no_border">
+				마닐라<span id="p5"></span>
+			</td>
+			<td width="7.8%" class="td_tb no_border">
+				베이징<span id="p4"></span>
+			</td>
+			<td width="7.8%" class="td_tb no_border">
+				황금열쇠<span id="p3"></span>
+			</td>
+			<td width="7.8%" class="td_tb no_border">
+				타이페이<span id="p2"></span>
+			</td>
+			<td width="14%" class="td_tb no_border">
+				<span id="p1">출발지점</span>
+				<span id="player1">
+					<button class="btn-info"><font size="4">🎠</font></button>
+				</span>
+				<span id="player2">
+					<button class="btn-info"><font size="4">🚀</font></button>
+				</span>
+				<span id="player3">
+					<button class="btn-info"><font size="4">🛫</font></button>
+				</span>
+				<span id="player4">
+					<button class="btn-info"><font size="4">🚁</font></button>
+				</span>
+			</td>
+		</tr>
+	</table>
+</div>			
+</body>
+<script src="/blue-marble/scripts/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(document).on("click","#table td",function(){
+			console.log($(this).attr("id"));
+	});
+		// player 객체 생성
+		function Player(playerNo) {
+			this.playerNo= playerNo; // 플레이어 넘버
+			this.location= 1; // 현재 위치
+			this.destination= 1; // 이동할 목적지
+			this.click= 0; // 클릭 횟수
+			this.doubleFlag = 0; // 주사위 더블 검사, 0,1으로 바뀌는 변수
+			this.count = 0;
+			this.money = 30000000;// 초기머니
+			
+		}
+		
+		let player1 = new Player(1); 
+		let player2 = new Player(2);
+		let player3 = new Player(3);
+		let player4 = new Player(4);
+		
+		
+		// player 객체 배열
+		players = [player1, player2, player3, player4]; 
+		let playerNum = 0; // players의 인덱스, 0~3까지 순서대로 바뀌는 변수
+		let currentPlayer = players[0]; // 현재 플레이어
+
+		// 땅 배열
+		marbleMap = ["출발","타이페이","황금열쇠","베이징","마닐라","제주","싱가포르","황금열쇠","카이로","이스탄불",
+	          "무인도","아테네","황금열쇠","코펜하겐","스톡홀롬","콩코드여객기","베른","황금열쇠","베를린","오타와",
+	          "사회복지기금당첨","부에노스아이레스","황금열쇠","상파울로","시드니","부산","하와이","리스본","퀸 엘리자베스호","마드리드",
+	          "우주여행","도쿄","컬럼비아호","파리","로마","황금열쇠","런던","뉴욕","사회복지기부","서울"];
+		// 땅 수 : 40
+		console.log("map len: ", marbleMap.length)
+		
+		//사회복지 기금
+		let donation = 0;
+		
+		
+		//뭔지 몰겠듬
+	/* 	$(document).on("click","#table",function(){
+			console.log($(this).attr("id"));
+		 */
+		 
+		// 주사위 버튼 클릭
+		$("#diceBtn").click(function() {
+			// 클릭 횟수 증가
+			currentPlayer.click += 1;
+			//console.log(currentPlayer); 맨 처음 콘솔
+			
+			// 주사위 던지기
+			let dicePoint = dice(currentPlayer);
+			
+			console.log(dicePoint)
+			
+			// 이동할 목적지 계산
+			currentPlayer.destination = currentPlayer.location + dicePoint;
+			if(currentPlayer.destination > 40) {
+				currentPlayer.destination -= 40;
+				//월급계산
+				console.log("월급이닷");
+				currentPlayer.money += 200000;
+				console.log("보유금액 :", currentPlayer.money);
+			}
+			console.log("location: ", currentPlayer.location);
+			console.log("destination: ", currentPlayer.destination);
+						
+			//현재 플레이어
+			$("#nowPlay").val(playerNum+1);
+			
+			//무인도 분기
+			switch (currentPlayer.location){
+			case 11:
+				console.log("무인도")	
+				//더블 변수 초기화
+				//currentPlayer.doubleFlag = 0		
+				//무인도 일때 더블이 나오면 탈출 
+				if(currentPlayer.doubleFlag == 1){
+					//console.log("if")
+					//더블변수 초기화
+					currentPlayer.doubleFlag = 0
+					// 말 이동					
+					move(currentPlayer);				
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);
+				}else{			
+					//카운트가 증가함
+					currentPlayer.count ++;						
+					console.log("count :" ,currentPlayer.count);
+					
+					// 카운트가 3일때 무인도를 빠져나옴
+					if(currentPlayer.count == 3){
+						move(currentPlayer);				
+						//이동위치
+						$("#point").val(marbleMap[currentPlayer.location-1]);
+					}				
+					// 말 도착 후 행동 이동 위치
+					console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);				
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);	
+				break;
+				}
+				break;
+			default :
+				move(currentPlayer);				
+				//이동위치
+				$("#point").val(marbleMap[currentPlayer.location-1]);
+			
+				//현재 위치 콘솔
+				console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);
+			}
+			//사회복지기금
+			if(currentPlayer.location == 39){
+				donation += 1;
+				console.log("기부 전 금액: "+currentPlayer.money);			
+				currentPlayer.money -= 150000;
+				console.log("기부 후 금액: "+currentPlayer.money);
+				console.log("기부중첩",donation)
+			};
+			
+			//복지기금 받기
+			if(currentPlayer.location == 21){
+				console.log("받기 전 금액: ",currentPlayer.money);
+				currentPlayer.money += (donation*150000);
+				console.log("받은 후 금액: ",currentPlayer.money);
+				donation = 0;
+				console.log("기부중첩",donation)
+			};
+										
+			// 다음 플레이어 넘김, 클릭 횟수 초기화(3연속 더블까지만 진행)
+			currentPlayer = nextPlayer(currentPlayer);						
+		})
+		
+		// 주사위 던지기
+		function dice(currentPlayer) {
+			// 주사위 눈
+			let dice1 = 0;
+			let dice2 = 0;
+			
+			dice1 = Math.floor(Math.random()*6+1);
+			dice2 = Math.floor(Math.random()*6+1);
+			$("#dice1").attr("src","/blue-marble/image/dice"+dice1+".PNG");
+			$("#dice2").attr("src","/blue-marble/image/dice"+dice2+".PNG");
+			console.log("dice1 : " + dice1);
+			console.log("dice2 : " + dice2);
+			if(dice1 == dice2) {
+				currentPlayer.doubleFlag = 1;
+				console.log("더블"+currentPlayer.doubleFlag);
+			}
+			// 두 개의 주사위 합
+			let dicePoint = dice1 + dice2;
+			return dicePoint;
+		}
+		
+		// 말 이동
+		function move(currentPlayer) {
+			if(currentPlayer.doubleFlag == 1 && currentPlayer.click == 3) {
+				$("#player"+currentPlayer.playerNo).appendTo("#p11");	
+				currentPlayer.location = 11;
+				//currentPlayer.doubleFlag = 0;
+				return;
+			} else {
+				$("#player"+currentPlayer.playerNo).appendTo("#p"+currentPlayer.destination);	
+				//currentPlayer.doubleFlag = 0;
+			}
+			
+			currentPlayer.location = currentPlayer.destination;
+			//console.log("이동 후 location: ", currentPlayer.location); 
+		}
+		
+		// 다음 플레이어
+		function nextPlayer(currentPlayer) {
+			// 더블이 아니고, 클릭횟수 3번일 경우
+			if(currentPlayer.doubleFlag != 1 || currentPlayer.click == 3 ||currentPlayer.location == 11 ) {
+				playerNum += 1;
+				currentPlayer.click = 0
+				currentPlayer.doubleFlag = 0;
+				if(playerNum>3) {
+					playerNum = 0;
+				}
+			// 더블이면 플레이어 넘기지 않고 진행
+			} else {
+				currentPlayer.doubleFlag = 0;
+			}
+			console.log("nextPlayerIdx",playerNum);
+			
+			// 다음 플레이어 객체 리턴
+			return players[playerNum];
+		}
+		
+	}) // document ready 닫는 괄호
+</script>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blue Marble</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+.board, .controll {
+	margin: 30px;
+}
+.gameborder {
+	border: 1px solid #000000;
+	width: 120px;
+	height: 80px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="row">
+	<div class="controll col-sm-3">
+		<h5>Blue Marble</h5>
+		결과<input type="text" id="point">
+		플레이어<input type="text" id="nowPlay">
+		<div>
+			<button id="diceBtn" type="button">주사위 굴리기</button>
+		</div>
+		<div>
+			<button id="doubleBtn" type="button">더블 테스트</button>
+		</div>
+		<div>
+			<div>주사위1<input id="dice1" readonly="readonly"></div>
+			<div>주사위2<input id="dice2" readonly="readonly"></div>
+		</div>
+	</div>
+	<div class="board col-sm-7">
+		
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p21">21</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p22">22</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p23">23</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p24">24</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p25">25</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p26">26</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p27">27</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p28">28</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p29">29</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p30">30</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p31">31</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p20">20</span>
+			</div>
+			<div class="col-sm-9">
+				<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p32">32</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p19">19</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p33">33</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p18">18</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p34">34</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p17">17</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p35">35</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p16">16</span>
+			</div>
+			<div class="col-sm-9">
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p36">36</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p15">15</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p37">37</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p14">14</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p38">38</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p13">13</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p39">39</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p12">12</span>
+			</div>
+			<div class="col-sm-9">&nbsp;</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p40">40</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 gameborder">
+				<span id="p11">11</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p10">10</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p9">9</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p8">8</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p7">7</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p6">6</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p5">5</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p4">4</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p3">3</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p2">2</span>
+			</div>
+			<div class="col-sm-1 gameborder">
+				<span id="p1">1</span>
+				<span id="player1">
+					<button class="btn-info"><font size="5">1</font></button>
+				</span>
+				<span id="player2">
+					<button class="btn-info"><font size="5">2</font></button>
+				</span>
+				<span id="player3">
+					<button class="btn-info"><font size="5">3</font></button>
+				</span>
+				<span id="player4">
+					<button class="btn-info"><font size="5">4</font></button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+	$(document).ready(function() {
+		// player 객체 생성
+		function Player(playerNo) {
+			this.playerNo= playerNo; // 플레이어 넘버
+			this.location= 1; // 현재 위치
+			this.destination= 1; // 이동할 목적지
+			this.click= 0; // 클릭 횟수
+			this.doubleFlag = 0; // 주사위 더블 검사, 0,1으로 바뀌는 변수
+			this.count = 0
+		}
+		let player1 = new Player(1); 
+		let player2 = new Player(2);
+		let player3 = new Player(3);
+		let player4 = new Player(4);
+		// player 객체 배열
+		players = [player1, player2, player3, player4]; 
+		let playerNum = 0; // players의 인덱스, 0~3까지 순서대로 바뀌는 변수
+		let currentPlayer = players[0]; // 현재 플레이어
+		
+		// 땅 배열
+		marbleMap = ["출발","타이페이","황금열쇠","베이징","마닐라","제주","싱가포르","황금열쇠","카이로","이스탄불",
+	          "무인도","아테네","황금열쇠","코펜하겐","스톡홀롬","콩코드여객기","베른","황금열쇠","베를린","오타와",
+	          "사회복지기금받","부에노스아이레스","황금열쇠","상파울로","시드니","부산","하와이","리스본","퀸 엘리자베스호","마드리드",
+	          "우주여행","도쿄","컬럼비아호","파리","로마","황금열쇠","런던","뉴욕","사회복지기금주","서울"];
+		// 땅 수 : 40
+		console.log("map len: ", marbleMap.length)
+		
+		// 주사위 버튼 클릭
+		$("#diceBtn").click(function() {
+			// 클릭 횟수 증가
+			currentPlayer.click += 1;
+			console.log(currentPlayer);
+			
+			// 주사위 던지기
+			let dicePoint = dice(currentPlayer);
+			
+			console.log(dicePoint)
+			
+			// 이동할 목적지 계산
+			currentPlayer.destination = currentPlayer.location + dicePoint;
+			if(currentPlayer.destination > 40) {
+				currentPlayer.destination -= 40;
+			}
+			console.log("location: ", currentPlayer.location);
+			console.log("destination: ", currentPlayer.destination);
+			
+			if (currentPlayer.location == 11) {
+				console.log("무인도")
+				if(currentPlayer.doubleFlag == 1) {
+					console.log("in if")
+					// 말 이동					
+					currentPlayer.doubleFlag = 0
+					move(currentPlayer);				
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);
+				} else{	
+					currentPlayer.count++;
+					console.log("count",currentPlayer.count);
+					if(currentPlayer.count == 3){
+						move(currentPlayer);				
+						//이동위치
+						$("#point").val(marbleMap[currentPlayer.location-1]);
+					}
+					// 말 도착 후 행동 이동 위치
+					console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);	
+				}
+			}
+			else{
+				move(currentPlayer);
+				//이동위치
+				$("#point").val(marbleMap[currentPlayer.location-1]);
+				console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);
+			}
+			// 다음 플레이어 넘김, 클릭 횟수 초기화(3연속 더블까지만 진행)
+			currentPlayer = nextPlayer(currentPlayer);						
+		})
+		
+		// 더블 테스트용 버튼
+		$("#doubleBtn").click(function() {
+			// 클릭 횟수 증가
+			currentPlayer.click += 1;
+			console.log(currentPlayer);
+			
+			// 주사위 던지기
+			let dice1 = Math.floor(Math.random()*6+1);
+			let dice2 = dice1;
+			$("#dice1").val(dice1);
+			$("#dice2").val(dice2);
+			let dicePoint = dice1 + dice2;
+			if(dice1 == dice2) {
+				currentPlayer.doubleFlag = 1;
+				console.log("더블"+currentPlayer.doubleFlag);
+			}
+			
+			// 이동할 목적지 계산
+			currentPlayer.destination = currentPlayer.location + dicePoint;
+			if(currentPlayer.destination > 40) {
+				currentPlayer.destination -= 40;
+			}
+			console.log("location: ", currentPlayer.location);
+			console.log("destination: ", currentPlayer.destination);
+			
+			switch (currentPlayer.location){
+			case 11:
+				console.log("무인도")
+				if(currentPlayer.doubleFlag == 1){
+					console.log("in if")
+					// 말 이동			
+					currentPlayer.doubleFlag = 0
+					move(currentPlayer);				
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);
+				}else{	
+					currentPlayer.count++;
+					console.log("count",currentPlayer.count);
+					if(currentPlayer.count == 4){
+						move(currentPlayer);				
+						//이동위치
+						$("#point").val(marbleMap[currentPlayer.location-1]);
+					}
+					// 말 도착 후 행동 이동 위치
+					console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);
+					//이동위치
+					$("#point").val(marbleMap[currentPlayer.location-1]);	
+				break;
+				}
+				break;
+			default :
+				move(currentPlayer);
+				//이동위치
+				$("#point").val(marbleMap[currentPlayer.location-1]);
+				console.log("현재 위치: ",marbleMap[currentPlayer.location-1]);
+			}
+			// 다음 플레이어 넘김, 클릭 횟수 초기화(3연속 더블까지만 진행)
+			currentPlayer = nextPlayer(currentPlayer);
+		})
+		
+		// 주사위 던지기
+		function dice(currentPlayer) {
+			// 주사위 눈
+			let dice1 = 0;
+			let dice2 = 0;
+			
+			dice1 = Math.floor(Math.random()*6+1);
+			dice2 = Math.floor(Math.random()*6+1);
+			$("#dice1").val(dice1);
+			$("#dice2").val(dice2);
+			console.log("1: " + dice1);
+			console.log("2: " + dice2);
+			if(dice1 == dice2) {
+				currentPlayer.doubleFlag = 1;
+				console.log("더블"+currentPlayer.doubleFlag);
+			}
+			// 두 개의 주사위 합
+			let dicePoint = dice1 + dice2;
+			return dicePoint;
+		}
+		
+		// 말 이동
+		function move(currentPlayer) {
+			if(currentPlayer.doubleFlag == 1 && currentPlayer.click == 3) {
+				$("#player"+currentPlayer.playerNo).appendTo("#p11");	
+				currentPlayer.location = 11;
+				return;
+			} else {
+				$("#player"+currentPlayer.playerNo).appendTo("#p"+currentPlayer.destination);	
+				
+			}
+			
+			currentPlayer.location = currentPlayer.destination;
+			console.log("이동 후 location: ", currentPlayer.location);
+		}
+		
+		// 다음 플레이어
+		function nextPlayer(currentPlayer) {
+			// 더블이 아니거나, 클릭횟수 3번이거나, 무인도일 때 다음플레이어로 넘김
+			if(currentPlayer.doubleFlag != 1 || currentPlayer.click == 3 || currentPlayer.location == 11) {
+				playerNum += 1;
+				currentPlayer.click = 0
+				currentPlayer.doubleFlag = 0;
+				if(playerNum>3) {
+					playerNum = 0;
+				}
+			// 더블이면 플레이어 넘기지 않고 진행
+			} else {
+				currentPlayer.doubleFlag = 0;
+			}
+			console.log("nextPlayerIdx",playerNum);
+			
+			// 다음 플레이어 객체 리턴
+			return players[playerNum];
+		}
+		
+	}) // document ready 닫는 괄호
+</script>
+</html>
